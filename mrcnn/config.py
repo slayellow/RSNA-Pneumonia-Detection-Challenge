@@ -1,18 +1,4 @@
-"""
-Mask R-CNN
-Base Configurations class.
-
-Copyright (c) 2017 Matterport, Inc.
-Licensed under the MIT License (see LICENSE for details)
-Written by Waleed Abdulla
-"""
-
 import numpy as np
-
-
-# Base Configuration Class
-# Don't use this class directly. Instead, sub-class it and override
-# the configurations you need to change.
 
 class Config(object):
     """Base configuration class. For custom configurations, create a

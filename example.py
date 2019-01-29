@@ -1,11 +1,6 @@
 import os
-import sys
 import random
-import math
 import numpy as np
-import cv2
-import matplotlib.pyplot as plt
-import json
 import pydicom
 from imgaug import augmenters as iaa
 from tqdm import tqdm
@@ -16,12 +11,9 @@ from DetectorDataset import DetectorDataset
 from DetectorConfig import DetectorConfig
 from mrcnn import utils
 import mrcnn.model as modellib
-from mrcnn import visualize
-from mrcnn.model import log
 
 
-
-DATA_DIR = './input/'
+DATA_DIR = 'E:/Data/RSNA Pneumonia Detection Challenge Data/'
 ROOT_DIR = './working/'
 train_dicom_dir = os.path.join(DATA_DIR, 'stage_2_train_images')
 test_dicom_dir = os.path.join(DATA_DIR, 'stage_2_test_images')
